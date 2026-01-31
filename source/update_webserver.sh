@@ -2,12 +2,10 @@
 
 # Переменные для настройки
 SERVICE_NAME="webserver" # Имя вашего демона
-CONTENT_NAME="index.html" # Контент
 REMOTE_USER="root" # Имя пользователя на удаленном сервере
 REMOTE_HOST="45.82.152.163"  # IP-адрес или hostname сервера
 REMOTE_SSH_PORT="22" # Порт SSH, если не стандартный
 LOCAL_FILE_PATH="/home/user/Projects/WebServer/source/${SERVICE_NAME}" # Путь к файлу на вашем локальном компьютере
-LOCAL_FILE_PATH2="/home/user/Projects/WebServer/source/${CONTENT_NAME}" # Путь к файлу на вашем локальном компьютере
 REMOTE_FILE_PATH="/usr/local/bin/" # Путь к файлу на удаленном сервере
 
 echo "Компиляция ${SERVICE_NAME}..."
