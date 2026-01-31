@@ -1,0 +1,14 @@
+[Unit]
+Description=Простой веб сервер
+After=network.target
+
+[Service]
+ExecStart=/usr/local/bin/webserver    # Путь к вашему скомпилированному приложению
+Restart=always                        # Перезапускать службу при любом сбое
+User=nobody
+Group=nogroup
+StandardOutput=syslog                 # Перенаправить вывод в syslog
+StandardError=syslog                  # Перенаправить ошибки в syslog
+
+[Install]
+WantedBy=multi-user.target
